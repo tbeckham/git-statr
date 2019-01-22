@@ -24,7 +24,7 @@ docker build -t git-statr .
 ### Run it
 Once you have the image you can run a container from it. I prefer to pass my ssh keys and existing repository to inspect on launch. This way I can manipulate the git repo within the container easily.
 ```
-docker run -i -t -v /Users/tony/.ssh/:/root/.ssh -v /Users/tony/Dev/cool-project/:/cool-project git-statr
+$ docker run -i -t -v /Users/tony/.ssh/:/root/.ssh -v /Users/tony/Dev/cool-project/:/cool-project git-statr
 ```
 This will dump you into the running containers shell prompt where you can use the installed tools. Continue reading for example usage.
 
@@ -51,7 +51,7 @@ $ cd myrepo
 ```
 2. Run the tool against the current dir and place the output in a folder in the current directory. This example also shows naming the report. See the tool help for more optional config values.
 ```
-gitstats -c project_name=<optional name for your report> . ./<outputdir>
+$ gitstats -c project_name=<optional name for your report> . ./<outputdir>
 ```
 
 To get the report from the container to your localhost we need to use docker on cp from a terminal on the localhost. Need to provide the source as a hash of the container and the output location and the destination on the local filesystem
