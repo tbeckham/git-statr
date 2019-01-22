@@ -84,4 +84,4 @@ $ cd myrepo
 ```
 $ git-quick-stats
 ```
-Follow the interactive prompts
+3. Follow the interactive prompts
