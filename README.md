@@ -26,7 +26,7 @@ Once you have the image you can run a container from it. I prefer to pass my ssh
 ```
 $ docker run -i -t -v /Users/tony/.ssh/:/root/.ssh -v /Users/tony/Dev/cool-project/:/cool-project git-statr
 ```
-This will dump you into the running containers shell prompt where you can use the installed tools. Continue reading for example usage.
+This will dump you into the running container's shell prompt where you can use the installed tools. Continue reading for example usage.
 
 ## How to use the tools
 The usages assume you are running in interactive mode and have a git repository within the container. The example from the build and run section shows how to pass a local repository to the container when it is created and using the container in interactive mode.
