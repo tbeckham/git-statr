@@ -39,7 +39,7 @@ $ cd myrepo
 
 2. Run sloc
 ```
-$ sloc
+$ sloc .
 ```
 
 ### Using gitstats
